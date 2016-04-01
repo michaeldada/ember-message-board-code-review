@@ -1,5 +1,6 @@
 <article>
   <br>
+  <h1>Q:</h1>
     <h2>{{model.content}}</h2>
   <p>
     {{model.author}}
@@ -14,4 +15,8 @@
   <hr>
 
   {{new-answer question=model newAnswer="newAnswer"}}
+
+  <h1>A:</h1>
+
+  {{answer-tile question=model}}
 </article>
