@@ -1,0 +1,17 @@
+{{#if editQuestionForm}}
+<h3>Edit Question</h3>
+
+<form id="editQuestion">
+  <p>
+    {{input value=author placeholder=question.author}}
+    {{textarea value=content placeholder=question.content}}
+    {{textarea value=notes placeholder=question.notes rows="10" cols="140"}}
+  </p>
+
+  <p>
+    <button {{action "editQuestion" question}}>Edit</button>
+  </p>
+</form>
+{{else}}
+  <button {{action 'editQuestionForm'}}>Edit</button>
+{{/if}}
