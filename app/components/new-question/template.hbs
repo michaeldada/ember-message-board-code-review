@@ -1,0 +1,11 @@
+<h3>Ask a Question!</h3>
+
+<form id="newQuestion">
+  <p>
+    {{textarea value=content placeholder="Question" rows="10" cols="140"}}
+    {{input value=author placeholder="User"}}
+  </p>
+  <p>
+    <button {{action "createQuestion"}}>Ask!</button>
+  </p>
+</form>
