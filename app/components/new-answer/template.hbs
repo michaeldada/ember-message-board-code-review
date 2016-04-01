@@ -1,0 +1,15 @@
+{{#if newAnswerForm}}
+  <h3>Add Answer</h3>
+
+  <form id="newAnswerForm">
+    <p>
+      {{textarea value=content placeholder="Answer here"}}
+      {{input value=author placeholder="Username"}}
+    </p>
+    <p>
+      <button {{action "newAnswer"}}>Answer!</button>
+    </p>
+  </form>
+{{else}}
+  <button {{action "newAnswerForm"}}>Answer This Question!</button>
+{{/if}}
