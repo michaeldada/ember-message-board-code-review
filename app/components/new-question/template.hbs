@@ -2,8 +2,9 @@
 
 <form id="newQuestion">
   <p>
+    {{input value=author placeholder="Username"}}
     {{textarea value=content placeholder="Question" rows="10" cols="140"}}
-    {{input value=author placeholder="User"}}
+    {{textarea value=notes placeholder="Additional Notes"}}
   </p>
   <p>
     <button {{action "createQuestion"}}>Ask!</button>
