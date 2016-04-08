@@ -1,4 +1,4 @@
 {{#each model as |question|}}
-  {{#link-to 'question' question.id}}{{#question-tile question=question}}{{/question-tile}}{{/link-to}}
+  {{#question-tile question=question}}{{/question-tile}}
 {{/each}}
 {{#new-question newQuestion=model createQuestion="createQuestion"}}{{/new-question}}
