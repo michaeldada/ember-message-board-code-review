@@ -8,7 +8,12 @@ export default Ember.Component.extend({
   favorite: Ember.inject.service(),
 
   totalAnswers: Ember.computed('question.answers', function() {
-    var total = Object.keys(this.get('question.answers')).length;
+    var total = 0;
+    Object.keys(this.get('question.answers').forEach(function(key) {
+    total += 1;
+  }));
     return total;
   })
+
+
 });
