@@ -1,0 +1,7 @@
+Your Favorite Questions:
+<ul>
+  {{#each favorite.favorites as |favorite|}}
+    <li>{{#link-to 'question' favorite.id}}{{favorite.content}}{{/link-to}}</li>
+    <button {{action 'removeFromFavorites' favorite}}>Remove from Favorites</button>
+  {{/each}}
+</ul>

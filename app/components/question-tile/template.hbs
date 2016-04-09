@@ -1,9 +1,7 @@
 <article>
-  {{#favorite-star}}{{/favorite-star}}
   <h2>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h2>
   <p>
     {{question.author}}
   </p>
 
 </article>
-<button {{action 'addToFavorites' question}}>Add to Favorites</button>

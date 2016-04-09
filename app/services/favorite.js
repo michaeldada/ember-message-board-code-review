@@ -5,5 +5,9 @@ export default Ember.Service.extend({
 
   add(favorite) {
     this.get('favorites').pushObject(favorite);
+  },
+
+  remove(favorite) {
+    this.get('favorites').removeObject(favorite);
   }
 });

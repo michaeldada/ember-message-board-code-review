@@ -7,9 +7,5 @@ export default Ember.Component.extend({
 
   favorite: Ember.inject.service(),
 
-  actions: {
-    addToFavorites(favorite) {
-      this.get('favorite').add(favorite);
-    }
-  }
+  
 });
