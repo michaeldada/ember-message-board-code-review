@@ -1,7 +1,7 @@
 <article>
   <h2>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h2>
   <p>
-    {{question.author}} on {{model.date}}
+    Asked by: {{question.author}} on {{format-date question}}
   </p>
   <p>
     Current number of answers: {{totalAnswers}}
