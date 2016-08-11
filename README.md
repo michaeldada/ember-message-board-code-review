@@ -1,7 +1,6 @@
 # Message-board
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Built with Ember 2.0 and Firebase
+This is a basic message board system that allows users to ask questions, and other users to post answers to those questions.  Users can also add questions to their "Favorites" so that they can keep them in a list at the top of the page.  
 
 ## Prerequisites
 
